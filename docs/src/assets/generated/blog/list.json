@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Announcing Capacitor 1.0",
+    "author": "Max Lynch",
+    "email": "max@ionic.io",
+    "slug": "announcing-capacitor-1-0",
+    "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "date": "2019-05-22T08:00:00.000Z",
+    "contents": "---\ntitle: Announcing Capacitor 1.0\ndate: 2019-05-22 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday I’m thrilled to announce the 1.0 release of [Capacitor](/), Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.\n\nWe documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.\n\nTake a look: [https://ionicframework.com/blog/announcing-capacitor-1-0/](https://ionicframework.com/blog/announcing-capacitor-1-0/).\n",
+    "preview": "",
+    "html": "<p>Today I’m thrilled to announce the 1.0 release of <a href=\"/\">Capacitor</a>, Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.</p>\n<p>We documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.</p>\n<p>Take a look: <a href=\"https://ionicframework.com/blog/announcing-capacitor-1-0/\">https://ionicframework.com/blog/announcing-capacitor-1-0/</a>.</p>\n",
+    "meta": {
+      "title": "Announcing Capacitor 1.0",
+      "date": "2019-05-22T08:00:00.000Z",
+      "author": "Max Lynch <max@ionic.io>",
+      "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+      "featuredImageAlt": "Native React Apps Without React Native",
+      "published": true
+    }
+  }
+]

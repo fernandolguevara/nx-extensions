@@ -20,7 +20,21 @@
     },
     "stencil-e2e": {
       "tags": [],
-      "implicitDependencies": ["stencil"]
+      "implicitDependencies": [
+        "stencil"
+      ]
+    },
+    "lanyon": {
+      "tags": []
+    },
+    "lanyon-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "lanyon"
+      ]
+    },
+    "docs": {
+      "tags": []
     }
   },
   "tasksRunnerOptions": {
@@ -28,7 +42,11 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "",
-        "cacheableOperations": ["build", "test", "lint"],
+        "cacheableOperations": [
+          //"build",
+          "test",
+          "lint"
+        ],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }

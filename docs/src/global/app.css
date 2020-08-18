@@ -1,0 +1,66 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@tailwind components;
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+/**
+ * Use this directive to control where Tailwind injects the responsive
+ * variations of each utility.
+ *
+ * If omitted, Tailwind will append these classes to the very end of
+ * your stylesheet by default.
+ */
+@tailwind screens;
+
+:root {
+  --color-capacitor-blue: #119eff;
+  --button-background: var(--color-capacitor-blue);
+
+  --color-woodsmoke: #16161d;
+  --color-dolphin: #626177;
+  --color-gunpowder: #505061;
+  --color-manatee: #8888a2;
+  --color-cadet-blue: #abb2bf;
+  --color-whisper: #ebebf7;
+  --color-selago: #f4f4fd;
+  --color-white-lilac: #f8f8fc;
+  --color-white: #fff;
+
+  --color-grey-blue: #73849a;
+
+  --color-green-haze: #00ab47;
+
+  --color-dodger-blue: #1d9aff;
+  --color-dodger-blue-hover: rgba(#1d9aff, 0.2);
+
+  --color-old-lace: #fdf5e4;
+  --color-wheatfield: #f1e3c5;
+  --color-pirate-gold: #9a6400;
+
+  --button-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  --button-shadow-hover: 0 4px 6px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.08);
+
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prata', serif;
+}

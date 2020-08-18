@@ -15,7 +15,10 @@
               "packages/stencil/tsconfig.lib.json",
               "packages/stencil/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!packages/stencil/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!packages/stencil/**/*"
+            ]
           }
         },
         "test": {
@@ -96,10 +99,133 @@
           }
         }
       }
+    },
+    "lanyon": {
+      "root": "packages/lanyon",
+      "sourceRoot": "packages/lanyon/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "packages/lanyon/tsconfig.lib.json",
+              "packages/lanyon/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!packages/lanyon/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "packages/lanyon/jest.config.js",
+            "tsConfig": "packages/lanyon/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/packages/lanyon",
+            "tsConfig": "packages/lanyon/tsconfig.lib.json",
+            "packageJson": "packages/lanyon/package.json",
+            "main": "packages/lanyon/src/index.ts",
+            "assets": [
+              "packages/lanyon/*.md",
+              {
+                "input": "./packages/lanyon/src",
+                "glob": "**/*.!(ts)",
+                "output": "./src"
+              },
+              {
+                "input": "./packages/lanyon",
+                "glob": "collection.json",
+                "output": "."
+              },
+              {
+                "input": "./packages/lanyon",
+                "glob": "builders.json",
+                "output": "."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "lanyon-e2e": {
+      "projectType": "application",
+      "root": "e2e/lanyon-e2e",
+      "sourceRoot": "e2e/lanyon-e2e/src",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/nx-plugin:e2e",
+          "options": {
+            "target": "lanyon:build",
+            "npmPackageName": "@nxext/lanyon",
+            "pluginOutputPath": "dist/packages/lanyon",
+            "jestConfig": "e2e/lanyon-e2e/jest.config.js",
+            "tsSpecConfig": "e2e/lanyon-e2e/tsconfig.spec.json"
+          }
+        }
+      }
+    },
+    "docs": {
+      "projectType": "application",
+      "schematics": {
+        "@nxext/stencil:component": {
+          "style": "css",
+          "storybook": false
+        }
+      },
+      "root": "docs",
+      "sourceRoot": "docs/src",
+      "architect": {
+        "build": {
+          "builder": "@nxext/stencil:build",
+          "options": {
+            "projectType": "application",
+            "configPath": "docs/stencil.config.ts"
+          }
+        },
+        "test": {
+          "builder": "@nxext/stencil:test",
+          "options": {
+            "projectType": "application",
+            "configPath": "docs/stencil.config.ts"
+          }
+        },
+        "e2e": {
+          "builder": "@nxext/stencil:e2e",
+          "options": {
+            "projectType": "application",
+            "configPath": "docs/stencil.config.ts"
+          }
+        },
+        "gen": {
+          "builder": "@nxext/lanyon:build"
+        },
+        "serve": {
+          "builder": "@nxext/stencil:build",
+          "options": {
+            "projectType": "application",
+            "configPath": "docs/stencil.config.ts",
+            "serve": true,
+            "watch": true
+          }
+        },
+        "md-build": {
+          "builder": "@nxext/lanyon:build"
+        }
+      }
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nxext/stencil"
   },
   "schematics": {
     "@nrwl/workspace": {

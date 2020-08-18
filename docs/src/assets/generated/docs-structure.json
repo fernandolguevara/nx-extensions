@@ -1,0 +1,72 @@
+[
+  {
+    "text": "Getting Started",
+    "children": [
+      {
+        "text": "Introduction",
+        "filePath": "/assets/generated/docs/index.json",
+        "url": "/docs"
+      },
+      {
+        "text": "Required Dependencies",
+        "filePath": "/assets/generated/docs/getting-started/dependencies.json",
+        "url": "/docs/getting-started/dependencies"
+      },
+      {
+        "text": "Installation",
+        "filePath": "/assets/generated/docs/getting-started/index.json",
+        "url": "/docs/getting-started"
+      },
+      {
+        "text": "Using with Ionic",
+        "filePath": "/assets/generated/docs/getting-started/with-ionic.json",
+        "url": "/docs/getting-started/with-ionic"
+      }
+    ]
+  },
+  {
+    "text": "Basics",
+    "children": [
+      {
+        "text": "Development Workflow",
+        "filePath": "/assets/generated/docs/basics/workflow.json",
+        "url": "/docs/basics/workflow"
+      },
+      {
+        "text": "Opening Native IDE",
+        "filePath": "/assets/generated/docs/basics/opening-native-projects.json",
+        "url": "/docs/basics/opening-native-projects"
+      },
+      {
+        "text": "Building your App",
+        "filePath": "/assets/generated/docs/basics/building-your-app.json",
+        "url": "/docs/basics/building-your-app"
+      },
+      {
+        "text": "Running your App",
+        "filePath": "/assets/generated/docs/basics/running-your-app.json",
+        "url": "/docs/basics/running-your-app"
+      },
+      {
+        "text": "Using Plugins",
+        "filePath": "/assets/generated/docs/basics/using-plugins.json",
+        "url": "/docs/basics/using-plugins"
+      },
+      {
+        "text": "Native Project Configuration",
+        "filePath": "/assets/generated/docs/basics/configuring-your-app.json",
+        "url": "/docs/basics/configuring-your-app"
+      },
+      {
+        "text": "Progressive Web Apps",
+        "filePath": "/assets/generated/docs/basics/progressive-web-app.json",
+        "url": "/docs/basics/progressive-web-app"
+      },
+      {
+        "text": "CLI Reference",
+        "filePath": "/assets/generated/docs/basics/cli-commands.json",
+        "url": "/docs/basics/cli-commands"
+      }
+    ]
+  }
+]

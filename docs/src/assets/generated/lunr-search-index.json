@@ -1,0 +1,1 @@
+{"version":"2.3.8","fields":["title","description","content"],"fieldVectors":[],"invertedIndex":[],"pipeline":["stemmer"]}

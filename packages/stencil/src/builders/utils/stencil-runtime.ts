@@ -248,9 +248,7 @@ export function createStencilProcess() {
         runTask(values.coreCompiler, values.config, values.config.flags.task)
       ),
       map(() => ({ success: true })),
-      catchError((err) => {
-        log(err);
-        return of({ success: false, error: 'Error asd' })})
+      catchError((err) => of({ success: false }))
     );
   };
 }
