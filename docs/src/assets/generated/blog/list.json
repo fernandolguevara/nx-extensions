@@ -1,14 +1,95 @@
 [
   {
+    "title": "Announcing Capacitor 2.0",
+    "author": "Max Lynch",
+    "email": "max@ionic.io",
+    "slug": "announcing-capacitor-2-0",
+    "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "featuredImageAlt": "Native React Apps Without React Native",
+    "date": "2020-04-08T08:00:00.000Z",
+    "contents": "---\ntitle: Announcing Capacitor 2.0\ndate: 2020-04-08 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday we are excited to announce Capacitor 2.0!\n\nCapacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:\n\n<!--more-->\n\n * Swift 5 and Xcode 11+ support\n * Android 10 (SDK 29) and AndroidX support\n * Bug fixes and usability improvements to 23+ core plugins\n * Support for generating splash screens and icons\n\nWe documented the whole update and talked about what's next for Capacitor over on the Ionic blog.\n\nCheck it out:\n",
+    "preview": "<p>Today we are excited to announce Capacitor 2.0!</p>\n<p>Capacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:</p>\n",
+    "html": "<ul>\n<li>Swift 5 and Xcode 11+ support</li>\n<li>Android 10 (SDK 29) and AndroidX support</li>\n<li>Bug fixes and usability improvements to 23+ core plugins</li>\n<li>Support for generating splash screens and icons</li>\n</ul>\n<p>We documented the whole update and talked about what&#39;s next for Capacitor over on the Ionic blog.</p>\n<p>Check it out:</p>\n",
+    "meta": {
+      "title": "Announcing Capacitor 2.0",
+      "date": "2020-04-08T08:00:00.000Z",
+      "author": "Max Lynch <max@ionic.io>",
+      "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+      "featuredImageAlt": "Native React Apps Without React Native",
+      "published": true
+    }
+  },
+  {
+    "title": "Announcing Capacitor 2.0",
+    "author": "Max Lynch",
+    "email": "max@ionic.io",
+    "slug": "announcing-capacitor-2-0",
+    "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "featuredImageAlt": "Native React Apps Without React Native",
+    "date": "2020-04-08T08:00:00.000Z",
+    "contents": "---\ntitle: Announcing Capacitor 2.0\ndate: 2020-04-08 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday we are excited to announce Capacitor 2.0!\n\n<!--more-->\n\nCapacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:\n\n * Swift 5 and Xcode 11+ support\n * Android 10 (SDK 29) and AndroidX support\n * Bug fixes and usability improvements to 23+ core plugins\n * Support for generating splash screens and icons\n\nWe documented the whole update and talked about what's next for Capacitor over on the Ionic blog.\n\nCheck it out:\n",
+    "preview": "<p>Today we are excited to announce Capacitor 2.0!</p>\n",
+    "html": "<p>Capacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:</p>\n<ul>\n<li>Swift 5 and Xcode 11+ support</li>\n<li>Android 10 (SDK 29) and AndroidX support</li>\n<li>Bug fixes and usability improvements to 23+ core plugins</li>\n<li>Support for generating splash screens and icons</li>\n</ul>\n<p>We documented the whole update and talked about what&#39;s next for Capacitor over on the Ionic blog.</p>\n<p>Check it out:</p>\n",
+    "meta": {
+      "title": "Announcing Capacitor 2.0",
+      "date": "2020-04-08T08:00:00.000Z",
+      "author": "Max Lynch <max@ionic.io>",
+      "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+      "featuredImageAlt": "Native React Apps Without React Native",
+      "published": true
+    }
+  },
+  {
+    "title": "Announcing Capacitor 2.0",
+    "author": "Max Lynch",
+    "email": "max@ionic.io",
+    "slug": "announcing-capacitor-2-0",
+    "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "featuredImageAlt": "Native React Apps Without React Native",
+    "date": "2020-04-08T08:00:00.000Z",
+    "contents": "---\ntitle: Announcing Capacitor 2.0\ndate: 2020-04-08 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday we are excited to announce Capacitor 2.0!\n\n<!--more-->\n\nCapacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:\n\n * Swift 5 and Xcode 11+ support\n * Android 10 (SDK 29) and AndroidX support\n * Bug fixes and usability improvements to 23+ core plugins\n * Support for generating splash screens and icons\n\nWe documented the whole update and talked about what's next for Capacitor over on the Ionic blog.\n\nCheck it out:\n",
+    "preview": "<p>Today we are excited to announce Capacitor 2.0!</p>\n",
+    "html": "<p>Capacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:</p>\n<ul>\n<li>Swift 5 and Xcode 11+ support</li>\n<li>Android 10 (SDK 29) and AndroidX support</li>\n<li>Bug fixes and usability improvements to 23+ core plugins</li>\n<li>Support for generating splash screens and icons</li>\n</ul>\n<p>We documented the whole update and talked about what&#39;s next for Capacitor over on the Ionic blog.</p>\n<p>Check it out:</p>\n",
+    "meta": {
+      "title": "Announcing Capacitor 2.0",
+      "date": "2020-04-08T08:00:00.000Z",
+      "author": "Max Lynch <max@ionic.io>",
+      "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+      "featuredImageAlt": "Native React Apps Without React Native",
+      "published": true
+    }
+  },
+  {
+    "title": "Announcing Capacitor 2.0",
+    "author": "Max Lynch",
+    "email": "max@ionic.io",
+    "slug": "announcing-capacitor-2-0",
+    "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "featuredImageAlt": "Native React Apps Without React Native",
+    "date": "2020-04-08T08:00:00.000Z",
+    "contents": "---\ntitle: Announcing Capacitor 2.0\ndate: 2020-04-08 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday we are excited to announce Capacitor 2.0!\n\nCapacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:\n\n<!--more-->\n\n * Swift 5 and Xcode 11+ support\n * Android 10 (SDK 29) and AndroidX support\n * Bug fixes and usability improvements to 23+ core plugins\n * Support for generating splash screens and icons\n\nWe documented the whole update and talked about what's next for Capacitor over on the Ionic blog.\n\nCheck it out:\n",
+    "preview": "<p>Today we are excited to announce Capacitor 2.0!</p>\n<p>Capacitor 2.0 offers some key platform updates as well as security and bug fixes. These include:</p>\n",
+    "html": "<ul>\n<li>Swift 5 and Xcode 11+ support</li>\n<li>Android 10 (SDK 29) and AndroidX support</li>\n<li>Bug fixes and usability improvements to 23+ core plugins</li>\n<li>Support for generating splash screens and icons</li>\n</ul>\n<p>We documented the whole update and talked about what&#39;s next for Capacitor over on the Ionic blog.</p>\n<p>Check it out:</p>\n",
+    "meta": {
+      "title": "Announcing Capacitor 2.0",
+      "date": "2020-04-08T08:00:00.000Z",
+      "author": "Max Lynch <max@ionic.io>",
+      "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+      "featuredImageAlt": "Native React Apps Without React Native",
+      "published": true
+    }
+  },
+  {
     "title": "Announcing Capacitor 1.0",
     "author": "Max Lynch",
     "email": "max@ionic.io",
     "slug": "announcing-capacitor-1-0",
     "featuredImage": "/assets/img/blog/posts/stencil-roadmap-fall-2019.jpg",
+    "featuredImageAlt": "Native React Apps Without React Native",
     "date": "2019-05-22T08:00:00.000Z",
-    "contents": "---\ntitle: Announcing Capacitor 1.0\ndate: 2019-05-22 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday I’m thrilled to announce the 1.0 release of [Capacitor](/), Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.\n\nWe documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.\n\nTake a look: [https://ionicframework.com/blog/announcing-capacitor-1-0/](https://ionicframework.com/blog/announcing-capacitor-1-0/).\n",
-    "preview": "",
-    "html": "<p>Today I’m thrilled to announce the 1.0 release of <a href=\"/\">Capacitor</a>, Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.</p>\n<p>We documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.</p>\n<p>Take a look: <a href=\"https://ionicframework.com/blog/announcing-capacitor-1-0/\">https://ionicframework.com/blog/announcing-capacitor-1-0/</a>.</p>\n",
+    "contents": "---\ntitle: Announcing Capacitor 1.0\ndate: 2019-05-22 08:00:00\nauthor: Max Lynch <max@ionic.io>\nfeaturedImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg\nfeaturedImageAlt: Native React Apps Without React Native\npublished: true\n---\n\nToday I’m thrilled to announce the 1.0 release of [Capacitor](/), Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.\n\n<!--more-->\n\nWe documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.\n\nTake a look: [https://ionicframework.com/blog/announcing-capacitor-1-0/](https://ionicframework.com/blog/announcing-capacitor-1-0/).\n",
+    "preview": "<p>Today I’m thrilled to announce the 1.0 release of <a href=\"/\">Capacitor</a>, Ionic’s new Native API Container that makes it easy to build web apps that run on iOS, Android, and the web as Progressive Web Apps—with full access to native functionality on each platform.</p>\n",
+    "html": "<p>We documented this momentous occasion over on the Ionic blog, complete with a comparison to Cordova and where Capacitor is headed from here.</p>\n<p>Take a look: <a href=\"https://ionicframework.com/blog/announcing-capacitor-1-0/\">https://ionicframework.com/blog/announcing-capacitor-1-0/</a>.</p>\n",
     "meta": {
       "title": "Announcing Capacitor 1.0",
       "date": "2019-05-22T08:00:00.000Z",

@@ -4,10 +4,9 @@ import state from '../../store';
 import Router from '../../router';
 
 @Component({
-  tag: 'docs-menu-toggle'
+  tag: 'docs-menu-toggle',
 })
 export class DocsMenuToggle {
-
   handleButtonClick() {
     state.menuShown = !state.menuShown;
   }
@@ -20,17 +19,40 @@ export class DocsMenuToggle {
     ) {
       return (
         <Host>
-          <div class="block md:hidden">
-            <a onClick={() => this.handleButtonClick()}
-               class="relative z-50 block px-3 h-32 bg-blue-900 text-white text-center tracking-widest uppercase text-xs font-bold pt-8 pb-6 flex flex-col items-center justify-between hover:bg-gray-900">
-              <span>menu</span>
-              <div class="flex items-end justify-center">
-                <span class="block h-5 w-1 bg-yellow-600"></span>
-                <span class="block h-8 w-1 bg-yellow-600 mx-1"></span>
-                <span class="block h-5 w-1 bg-yellow-600"></span>
-              </div>
-            </a>
-          </div>
+          <button
+            onClick={() => this.handleButtonClick()}
+            class="inline-flex items-center justify-center p-2 rounded-md hover:bg-background-secondary focus:outline-none focus:bg-background-secondary transition duration-150 ease-in-out"
+            aria-label="Main menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="block h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+
+            <svg
+              class="hidden h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </Host>
       );
     }

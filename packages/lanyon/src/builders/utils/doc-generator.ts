@@ -84,6 +84,7 @@ export async function convertFile(SOURCE_DIR: string, DESTINATION_DIR: string, s
     collectHeadingMetadata(renderer, markdownMetadata);
     changeCodeCreation(renderer);
     localizeMarkdownLink(renderer, destinationFileName.replace('src', ''), siteStructureJson);
+
     htmlContents = marked(parsedMarkdown.body, {
       renderer,
       headerIds: true
@@ -100,19 +101,6 @@ export async function convertFile(SOURCE_DIR: string, DESTINATION_DIR: string, s
       srcPath: filePath,
       content: htmlContents
     };
-
-    /*
-    const startsWithMatch = /^[#a-zA-z0-9]/mg;
-    const removeCodeBlocks = /```[\s\S]*?```/mg;
-    const { title, description, url } = data;
-    const alogliaData = {
-      title,
-      description,
-      url,
-      content: parsedMarkdown.body.replace(removeCodeBlocks, '').split('\n').filter((line) => line.length && line.match(startsWithMatch)).map((line) => line.replace(/#(\S*)/g, '').trim())
-    };
-    indexRecords.push(alogliaData);
-     */
 
     await writeFile(destinationFileName, JSON.stringify(data), {
       encoding: 'utf8'

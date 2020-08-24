@@ -3,8 +3,7 @@ import { SiteStructureItem } from '../../global/definitions';
 import { href } from 'stencil-router-v2';
 
 @Component({
-  tag: 'lower-content-nav',
-  styleUrl: 'lower-content-nav.css'
+  tag: 'lower-content-nav'
 })
 export class LowerContentNav {
 

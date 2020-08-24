@@ -4,14 +4,7 @@ import { sass } from '@stencil/sass';
 import { postcss } from '@stencil/postcss';
 import tailwindcss  from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
-
 import cssnano from 'cssnano'
-
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['./src/**/*.tsx', './src/index.html', './src/**/*.pcss'],
-  whitelist: ['mode-dark'],
-  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
-});
 
 export const config: Config = {
   taskQueue: 'async',
@@ -39,8 +32,7 @@ export const config: Config = {
       plugins: [
         tailwindcss('./docs/tailwind.config.js'),
         autoprefixer(),
-        //purgecss,
-        cssnano
+        cssnano()
       ]
     }),
     sass()

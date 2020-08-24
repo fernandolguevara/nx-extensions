@@ -1,25 +1,30 @@
 import { Component, Element, h } from '@stencil/core';
 
-import state from '../../store';
+import state, { ModeType } from '../../store';
 
 @Component({
   tag: 'site-container',
-  styleUrl: 'site-container.scss'
 })
 export class App {
   @Element() el: HTMLElement;
 
   render() {
     return (
-      <site-root class={`${state.pageTheme}`}>
-        <div class="bg-gray-100 flex flex-col h-screen">
+      <site-root
+        class={state.pageTheme == ModeType.Dark ? 'mode-dark' : 'mode-light'}
+      >
+        <div class="flex flex-col h-screen bg-background-secondary">
           <site-navigation></site-navigation>
 
-          <site-mobile-bottom-navigation />
+          <div class="content flex-grow">
+            <div class="bg-background-secondary">
+              <div class="container mx-auto px-8">
+                <site-routes />
+              </div>
+            </div>
+          </div>
 
-          <site-routes/>
-
-          <site-footer/>
+          <site-footer />
         </div>
       </site-root>
     );

@@ -1,13 +1,12 @@
-import { Component, Host, h, ComponentInterface } from '@stencil/core';
-import { Route, match } from 'stencil-router-v2';
+import { Component, ComponentInterface, h, Host } from '@stencil/core';
+import { match, Route } from 'stencil-router-v2';
 import { InternalRouterState } from 'stencil-router-v2/dist/types';
 
 import state from '../../store';
 import Router from '../../router';
 
 @Component({
-  tag: 'site-routes',
-  styleUrl: 'site-routes.css',
+  tag: 'site-routes'
 })
 export class SiteRoutes implements ComponentInterface {
 
@@ -17,12 +16,10 @@ export class SiteRoutes implements ComponentInterface {
     Router.onChange('url', (newValue: InternalRouterState['url'], _oldValue: InternalRouterState['url']) => {
       if (!oldUrl || oldUrl.pathname !== newValue.pathname) {
         state.menuShown = false;
-        state.pageTheme = 'light';
       }
 
       oldUrl = newValue;
 
-      // Reset scroll position
       requestAnimationFrame(() => window.scrollTo(0, 0));
     });
   }

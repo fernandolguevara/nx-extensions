@@ -26,6 +26,8 @@ export namespace Components {
     interface DocsMenu {
         "selectedParent": SiteStructureItem;
         "siteStructureList": SiteStructureItem[];
+        "template": 'guide' | 'reference';
+        "toggleOverlayMenu": () => Promise<void>;
     }
     interface DocsMenuToggle {
     }
@@ -41,8 +43,10 @@ export namespace Components {
         "next"?: SiteStructureItem;
         "prev"?: SiteStructureItem;
     }
+    interface ModeSwitch {
+    }
     interface NxextLogo {
-        "borderless": boolean;
+        "inline": boolean;
     }
     interface SearchBar {
         "debounce"?: number;
@@ -50,11 +54,12 @@ export namespace Components {
         "placeholder"?: string;
         "searchTerm"?: string;
     }
+    interface SiteBackdrop {
+        "visible": boolean;
+    }
     interface SiteContainer {
     }
     interface SiteFooter {
-    }
-    interface SiteMobileBottomNavigation {
     }
     interface SiteNavigation {
     }
@@ -128,6 +133,12 @@ declare global {
         prototype: HTMLLowerContentNavElement;
         new (): HTMLLowerContentNavElement;
     };
+    interface HTMLModeSwitchElement extends Components.ModeSwitch, HTMLStencilElement {
+    }
+    var HTMLModeSwitchElement: {
+        prototype: HTMLModeSwitchElement;
+        new (): HTMLModeSwitchElement;
+    };
     interface HTMLNxextLogoElement extends Components.NxextLogo, HTMLStencilElement {
     }
     var HTMLNxextLogoElement: {
@@ -140,6 +151,12 @@ declare global {
         prototype: HTMLSearchBarElement;
         new (): HTMLSearchBarElement;
     };
+    interface HTMLSiteBackdropElement extends Components.SiteBackdrop, HTMLStencilElement {
+    }
+    var HTMLSiteBackdropElement: {
+        prototype: HTMLSiteBackdropElement;
+        new (): HTMLSiteBackdropElement;
+    };
     interface HTMLSiteContainerElement extends Components.SiteContainer, HTMLStencilElement {
     }
     var HTMLSiteContainerElement: {
@@ -151,12 +168,6 @@ declare global {
     var HTMLSiteFooterElement: {
         prototype: HTMLSiteFooterElement;
         new (): HTMLSiteFooterElement;
-    };
-    interface HTMLSiteMobileBottomNavigationElement extends Components.SiteMobileBottomNavigation, HTMLStencilElement {
-    }
-    var HTMLSiteMobileBottomNavigationElement: {
-        prototype: HTMLSiteMobileBottomNavigationElement;
-        new (): HTMLSiteMobileBottomNavigationElement;
     };
     interface HTMLSiteNavigationElement extends Components.SiteNavigation, HTMLStencilElement {
     }
@@ -182,11 +193,12 @@ declare global {
         "docs-search": HTMLDocsSearchElement;
         "landing-page": HTMLLandingPageElement;
         "lower-content-nav": HTMLLowerContentNavElement;
+        "mode-switch": HTMLModeSwitchElement;
         "nxext-logo": HTMLNxextLogoElement;
         "search-bar": HTMLSearchBarElement;
+        "site-backdrop": HTMLSiteBackdropElement;
         "site-container": HTMLSiteContainerElement;
         "site-footer": HTMLSiteFooterElement;
-        "site-mobile-bottom-navigation": HTMLSiteMobileBottomNavigationElement;
         "site-navigation": HTMLSiteNavigationElement;
         "site-routes": HTMLSiteRoutesElement;
     }
@@ -209,8 +221,10 @@ declare namespace LocalJSX {
         "language"?: string;
     }
     interface DocsMenu {
+        "onMenuToggled"?: (event: CustomEvent<any>) => void;
         "selectedParent"?: SiteStructureItem;
         "siteStructureList"?: SiteStructureItem[];
+        "template"?: 'guide' | 'reference';
     }
     interface DocsMenuToggle {
     }
@@ -226,8 +240,10 @@ declare namespace LocalJSX {
         "next"?: SiteStructureItem;
         "prev"?: SiteStructureItem;
     }
+    interface ModeSwitch {
+    }
     interface NxextLogo {
-        "borderless"?: boolean;
+        "inline"?: boolean;
     }
     interface SearchBar {
         "debounce"?: number;
@@ -235,11 +251,12 @@ declare namespace LocalJSX {
         "placeholder"?: string;
         "searchTerm"?: string;
     }
+    interface SiteBackdrop {
+        "visible"?: boolean;
+    }
     interface SiteContainer {
     }
     interface SiteFooter {
-    }
-    interface SiteMobileBottomNavigation {
     }
     interface SiteNavigation {
     }
@@ -257,11 +274,12 @@ declare namespace LocalJSX {
         "docs-search": DocsSearch;
         "landing-page": LandingPage;
         "lower-content-nav": LowerContentNav;
+        "mode-switch": ModeSwitch;
         "nxext-logo": NxextLogo;
         "search-bar": SearchBar;
+        "site-backdrop": SiteBackdrop;
         "site-container": SiteContainer;
         "site-footer": SiteFooter;
-        "site-mobile-bottom-navigation": SiteMobileBottomNavigation;
         "site-navigation": SiteNavigation;
         "site-routes": SiteRoutes;
     }
@@ -281,11 +299,12 @@ declare module "@stencil/core" {
             "docs-search": LocalJSX.DocsSearch & JSXBase.HTMLAttributes<HTMLDocsSearchElement>;
             "landing-page": LocalJSX.LandingPage & JSXBase.HTMLAttributes<HTMLLandingPageElement>;
             "lower-content-nav": LocalJSX.LowerContentNav & JSXBase.HTMLAttributes<HTMLLowerContentNavElement>;
+            "mode-switch": LocalJSX.ModeSwitch & JSXBase.HTMLAttributes<HTMLModeSwitchElement>;
             "nxext-logo": LocalJSX.NxextLogo & JSXBase.HTMLAttributes<HTMLNxextLogoElement>;
             "search-bar": LocalJSX.SearchBar & JSXBase.HTMLAttributes<HTMLSearchBarElement>;
+            "site-backdrop": LocalJSX.SiteBackdrop & JSXBase.HTMLAttributes<HTMLSiteBackdropElement>;
             "site-container": LocalJSX.SiteContainer & JSXBase.HTMLAttributes<HTMLSiteContainerElement>;
             "site-footer": LocalJSX.SiteFooter & JSXBase.HTMLAttributes<HTMLSiteFooterElement>;
-            "site-mobile-bottom-navigation": LocalJSX.SiteMobileBottomNavigation & JSXBase.HTMLAttributes<HTMLSiteMobileBottomNavigationElement>;
             "site-navigation": LocalJSX.SiteNavigation & JSXBase.HTMLAttributes<HTMLSiteNavigationElement>;
             "site-routes": LocalJSX.SiteRoutes & JSXBase.HTMLAttributes<HTMLSiteRoutesElement>;
         }

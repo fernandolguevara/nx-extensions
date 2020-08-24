@@ -2,7 +2,7 @@ import { BuildBuilderSchema } from '../build/schema';
 import { BuilderContext } from '@angular-devkit/architect';
 import { ensureDir, readFile, writeFile } from 'fs-extra';
 import marked from 'marked';
-import frontMatter, { FrontMatterResult } from 'front-matter';
+import frontMatter  from 'front-matter';
 import { getSystemPath, join, normalize, Path } from '@angular-devkit/core';
 import { promisify } from 'util';
 import glob from 'glob';
@@ -51,11 +51,13 @@ export interface RenderedBlog {
   slug: string;
   date: string;
   contents: string;
+  featuredImage: string;
+  featuredImageAlt: string;
   preview: string;
   html: string;
-
   meta?: any;
 }
+
 
 async function buildPost(filePath: string): Promise<RenderedBlog> {
   const contents = await readFile(filePath, { encoding: 'utf8' });
@@ -66,6 +68,7 @@ async function buildPost(filePath: string): Promise<RenderedBlog> {
 
   const authorString = data.attributes.author as string;
   const featuredImage = data.attributes.featuredImage as string;
+  const featuredImageAlt = data.attributes.featuredImageAlt as string;
 
   const emailIndex = authorString.indexOf('<');
   const author = authorString.slice(0, emailIndex).trim();
@@ -102,6 +105,7 @@ async function buildPost(filePath: string): Promise<RenderedBlog> {
     email,
     slug,
     featuredImage,
+    featuredImageAlt,
     date: (data.attributes.date as Date).toISOString(),
     contents: contents,
     preview: parsedPreview,

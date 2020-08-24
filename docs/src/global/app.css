@@ -26,41 +26,48 @@
 @tailwind screens;
 
 :root {
-  --color-capacitor-blue: #119eff;
-  --button-background: var(--color-capacitor-blue);
+  --brand: #DD6B20;
+}
 
-  --color-woodsmoke: #16161d;
-  --color-dolphin: #626177;
-  --color-gunpowder: #505061;
-  --color-manatee: #8888a2;
-  --color-cadet-blue: #abb2bf;
-  --color-whisper: #ebebf7;
-  --color-selago: #f4f4fd;
-  --color-white-lilac: #f8f8fc;
-  --color-white: #fff;
+.mode-dark {
+  --bg-background-primary: #2D3748 ;
+  --bg-background-secondary: #4A5568;
+  --bg-background-tertiary: #1A202C;
 
-  --color-grey-blue: #73849a;
+  --highlight-primary: #FBD38D;
+  --highlight-secondary: #F7FAFC;
 
-  --color-green-haze: #00ab47;
+  --modeswitch-primary: #cbd5e0;
+  --modeswitch-secondary: #4A5568;
 
-  --color-dodger-blue: #1d9aff;
-  --color-dodger-blue-hover: rgba(#1d9aff, 0.2);
+  --text-color: #E2E8F0;
+}
 
-  --color-old-lace: #fdf5e4;
-  --color-wheatfield: #f1e3c5;
-  --color-pirate-gold: #9a6400;
+.mode-light {
+  --bg-background-primary: white;
+  --bg-background-secondary: white;
+  --bg-background-tertiary: #e2e8f0;
 
-  --button-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
-  --button-shadow-hover: 0 4px 6px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.08);
+  --highlight-primary: #DD6B20;
+  --highlight-secondary: #4A5568;
 
-  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --modeswitch-primary: #cbd5e0;
+  --modeswitch-secondary: var(--highlight-secondary);
+
+  --text-color: #4A5568;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Prata', serif;
+ font-weight: 700;
+}
+
+.content p a {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(70%,transparent),color-stop(70%,rgba(221, 107, 32, .4)));
+  background-image: linear-gradient(180deg,transparent 70%,rgba(221, 107, 32, .4) 0);
 }
