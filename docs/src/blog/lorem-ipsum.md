@@ -1,9 +1,9 @@
 ---
-title: Announcing Capacitor 1.0
-date: 2019-05-22 08:00:00
-author: Max Lynch <max@ionic.io>
-featuredImage: /assets/img/blog/posts/stencil-roadmap-fall-2019.jpg
-featuredImageAlt: Native React Apps Without React Native
+title: Dummy
+date: 2020-05-01 10:00:00
+author: Dominik Pieper <dominik@pieper.io>
+featuredImage: 
+featuredImageAlt: Dummy Text
 published: true
 ---
 
