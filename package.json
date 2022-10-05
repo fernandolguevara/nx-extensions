@@ -102,7 +102,7 @@
     "chalk": "4.1.0",
     "commitizen": "^4.2.4",
     "cz-customizable": "^6.3.0",
-    "dotenv": "16.0.0",
+    "dotenv": "16.0.3",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
